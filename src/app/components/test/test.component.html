@@ -1,0 +1,11 @@
+<p>test works!</p>
+
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()" novalidate autocomplete="on">
+
+<input type="text" formControlName="smart">
+<span *ngIf="f.smart.errors?.['required'] && f.smart.touched"></span>
+
+<br />
+<button type="submit" [disabled]="">reg</button>
+</form>
